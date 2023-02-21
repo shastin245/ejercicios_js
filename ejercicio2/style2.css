@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(200, 229, 196);
+}
+h1{
+    color: blue;
+    font-size: 70px;
+}
+
+h1:hover{
+    color: blueviolet;
+}
+.container {
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+
+th {
+    background-color: #c0a3a3;
+}
+
+td#nota {
+    font-weight: bold;color: rgb(255, 0, 0);
+}

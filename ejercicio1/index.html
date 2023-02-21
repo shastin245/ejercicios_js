@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Validar edad</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="edad.js"></script>
-  </head>
-  <body>
-    <h1>Validar edad con calendario</h1>
-    <form>
-      <label for="cumple">Fecha de nacimiento:</label>
-      <input type="date" id="cumple" name="cumple">
-      <br>
-      <button type="button" onclick="validarEdad()">Validar</button>
-    </form>
-    <div id="resultado"></div>
 
-    <hr size="8px" color="black" />
+<head>
+  <title>Validar edad</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="edad.js"></script>
+</head>
 
-    <h2>Validar edad con digitos ingresados por usuario</h2>
-    <p>Ingresa tu edad:</p>
-    <input type="number" id="edad">
-    <button onclick="validarEdad2()">Validar</button>
-    <p id="resultado2"></p>
-    
-    <script>
-      function esMayorDeEdad(edad) {
-        if (edad >= 18) {
-          return true;
-        } else {
-          return false;
-        }
+<body>
+  <h1>Validar edad con calendario</h1>
+  <form>
+    <label for="cumple">Fecha de nacimiento:</label>
+    <input type="date" id="cumple" name="cumple">
+    <br>
+    <br>
+    <button type="button" onclick="validarEdad()">Validar</button>
+  </form>
+  <div id="resultado"></div>
+  <br>
+
+  <hr size="8px" color="black" />
+
+  <h2>Validar edad con digitos ingresados por usuario</h2>
+  <p>Ingresa tu edad:</p>
+  <input type="number" id="edad">
+  <br>
+  <br>
+  <button onclick="validarEdad2()">Validar</button>
+  <p id="resultado2"></p>
+
+  <script>
+    function esMayorDeEdad(edad) {
+      if (edad >= 18) {
+        return true;
+      } else {
+        return false;
       }
+    }
 
-      function validarEdad2() {
-        var inputEdad = document.getElementById("edad");
-        var edad = parseInt(inputEdad.value);
-        
-        if (esMayorDeEdad(edad)) {
-          document.getElementById("resultado2").innerHTML = "Sos mayor de edad.";
-        } else {
-          document.getElementById("resultado2").innerHTML = "Sos menor de edad.";
-        }
+    function validarEdad2() {
+      var inputEdad = document.getElementById("edad");
+      var edad = parseInt(inputEdad.value);
+
+      if (esMayorDeEdad(edad)) {
+        document.getElementById("resultado2").innerHTML = "Sos mayor de edad.";
+      } else {
+        document.getElementById("resultado2").innerHTML = "Sos menor de edad.";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
+
 </html>

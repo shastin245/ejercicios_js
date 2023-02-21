@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de aumento salarial</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
 </head>
+
 <body>
-    
+    <h1>Calculadora de aumento salarial</h1>
+    <form>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="salario">Salario:</label>
+            <input type="number" id="salario" name="salario" min="0" required>
+        </div>
+        <div>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </div>
+        <button type="button" onclick="calcularAumento()">Calcular aumento</button>
+    </form>
+
+    <div id="resultado"></div>
+    <script src="empleado.js"></script>
 </body>
+
 </html>

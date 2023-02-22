@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Calculadora de descuentos en viajes turísticos</title>
+  <link rel="stylesheet" href="style6.css">
+  <script src="descuento.js"></script>
+  
 </head>
 <body>
-    
+  <h1>Calculadora de descuentos en viajes turisticos</h1>
+  <form>
+    <label for="origen">Origen:</label>
+    <input type="text" id="origen" name="origen">
+    <label for="destino">Destino:</label>
+    <input type="text" id="destino" name="destino">
+    <label for="precioBase">Precio base:</label>
+    <input type="number" id="precio" name="precioBase">
+    <button type="button" onclick="calcularDescuento()">Calcular descuento</button>
+  </form>
+  <p id="precioFinal"></p>
 </body>
 </html>

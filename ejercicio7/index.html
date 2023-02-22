@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title>Calculadora de notas ponderadas</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>Calculadora de notas ponderadas</h1>
+    <label for="nota1">Nota 1:</label>
+    <input type="number" id="nota1" name="nota1"><br><br>
+    <label for="nota2">Nota 2:</label>
+    <input type="number" id="nota2" name="nota2"><br><br>
+    <label for="ponderacion1">Ponderación nota 1:</label>
+    <input type="number" id="ponderacion1" name="ponderacion1"> %<br><br>
+    <button onclick="calcularNotaMedia()">Calcular</button><br><br>
+    <label for="notaMedia">Nota media ponderada:</label>
+    <input type="number" id="notaMedia" name="notaMedia" readonly>
 </body>
+
 </html>
